@@ -77,7 +77,7 @@ function LoginPage() {
           </button>
 
           <ReCaptcha
-            sitekey='6Ld_gCwpAAAAAFn-dSh8vyQH2G6Iw4CA_ZufrA7h'
+            sitekey='6Lc85i0pAAAAAPErAQFoY13E4E3R6XAtRyqis0VQ'
             onChange={(value) => setCaptchaValue(value)}
           />
         </form>
