@@ -5,7 +5,7 @@ import { useNavigate, Link } from 'react-router-dom';
 import ReCAPTCHA from "react-google-recaptcha";
 
 function RegisterPage() {
-    const { register, handleSubmit, formState: { errors } } = useForm(); 
+    const { register, handleSubmit, formState: { errors } } = useForm();
     const { signup, isAuthenticated, errors: registerErrors } = useAuth();
     const navigate = useNavigate();
     const [captchaValue, setCaptchaValue] = useState(null);
@@ -32,7 +32,7 @@ function RegisterPage() {
                 ))}
                 <h1 className='text-2xl font-bold'>Register</h1>
 
-                <form onSubmit={onSubmit}> 
+                <form onSubmit={onSubmit}>
                     <label htmlFor='username'>Usuario</label>
                     <input
                         type="text"
@@ -71,13 +71,13 @@ function RegisterPage() {
                     )}
 
                     <ReCAPTCHA
-                        sitekey='6LdqIikpAAAAANNJujXz_HNUQF1S2p8UlE2jLqrg'
+                        sitekey='6Lc85i0pAAAAAPErAQFoY13E4E3R6XAtRyqis0VQ'
                         onChange={(value) => setCaptchaValue(value)}
                     />
 
-                    <button className='bg-zinc-700 px-3 py-3 my-3 rounded-md' 
-                            type="submit"
-                            disabled={!captchaValue}
+                    <button className='bg-zinc-700 px-3 py-3 my-3 rounded-md'
+                        type="submit"
+                        disabled={!captchaValue}
                     >
                         Registrar
                     </button>
