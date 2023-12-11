@@ -31,9 +31,7 @@ function ProductCard({ product }) {
             <p className="text-slate-300 my-2">
                 {product.price}
             </p>
-            <p className="text-slate-300 my-2">
-                {product.year}
-            </p>
+
         </div>
     )
 }

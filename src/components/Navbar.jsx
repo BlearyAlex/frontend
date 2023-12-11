@@ -8,7 +8,7 @@ function Navbar() {
   const { isAuthenticated, logout, user } = useAuth();
 
   return (
-    <nav className="bg-zinc-700 my-3 py-3 px-10 rounded-lg flex justify-between items-center">
+    <nav className="bg-[#41b2d8] my-3 py-3 px-10 rounded-lg flex justify-between items-center">
       <Link to={isAuthenticated ? '/products' : '/'}>
         <h1 className="text-2xl font-bold text-white">Productos</h1>
       </Link>

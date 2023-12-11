@@ -75,7 +75,7 @@ function RegisterPage() {
                         onChange={(value) => setCaptchaValue(value)}
                     />
 
-                    <button className='bg-zinc-700 px-3 py-3 my-3 rounded-md'
+                    <button className='bg-zinc-700 px-3 py-3 my-3 rounded-md hover:scale-105 transition transform duration-300 ease-in-out cursor-pointer'
                         type="submit"
                         disabled={!captchaValue}
                     >

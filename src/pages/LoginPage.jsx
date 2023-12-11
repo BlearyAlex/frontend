@@ -69,7 +69,7 @@ function LoginPage() {
             <p className='text-red-500'>La longitud mínima es de 6 caracteres</p>
           )}
 
-          <button className='flex items-center justify-center bg-zinc-700 px-3 py-3 my-3 rounded-md text-white cursor-pointer'
+          <button className='flex items-center justify-center bg-zinc-700 px-3 py-3 my-3 rounded-md text-white cursor-pointer hover:scale-105 transition transform duration-300 ease-in-out'
             type="submit"
             disabled={!captchaValue}
           >
@@ -84,7 +84,7 @@ function LoginPage() {
         <p className='flex gap-x-2 justify-between pt-5 mt-5'>
           ¿No tienes una cuenta?
           <Link to="/register" className='text-sky-500'>
-            <div className='flex mx-2 px-2 items-start'>
+            <div className='flex mx-2 px-2 items-center justify-center'>
               Crear una cuenta <IoPersonAdd size={30} className='mx-1' />
             </div>
           </Link>

@@ -29,12 +29,6 @@ function LibrosCard({ libro }) {
             <p className="text-slate-300 my-2">
                 {libro.autor}
             </p>
-            <p className="text-slate-300 my-2">
-                { }
-            </p>
-            <p className="text-slate-300 my-2">
-                { }
-            </p>
         </div>
     )
 }
